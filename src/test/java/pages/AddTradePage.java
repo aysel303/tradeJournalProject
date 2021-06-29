@@ -53,4 +53,8 @@ public class AddTradePage {
 	
 	@FindBy(xpath="//a[text()='Back to Transactions']")
 	public WebElement backToTransactionLink;
+
+	//Trade Table elements by searched row
+	@FindBy(xpath="//table[@class='table table-bordered table-striped']/tbody/tr/td")
+	public List<WebElement> searchRowTableData;
 }
